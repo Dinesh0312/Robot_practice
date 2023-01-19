@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 testbed:
   name: test_project
 devices:
@@ -44,4 +45,52 @@ devices:
     tacacs:
       username: admin
     passwords:
+=======
+testbed:
+  name: test_project
+devices:
+  R1:
+    type: router
+    connections:
+      console:
+        protocol: telnet
+        ip: 10.225.240.141
+        port: '17071'
+        username: admin
+        password: admin
+        class: unicon.Unicon
+      defaults:
+        via: console
+    os: iosxr
+    custom:
+      categories:
+      - ios
+      - xr
+      - xr-v
+    tacacs:
+      username: admin
+    passwords:
+      linux: admin
+  R2:
+    type: router
+    connections:
+      console:
+        protocol: telnet
+        ip: 10.225.240.141
+        port: '17074'
+        username: admin
+        password: admin
+        class: unicon.Unicon
+      defaults:
+        via: console
+    os: iosxr
+    custom:
+      categories:
+      - ios
+      - xr
+      - xr-v
+    tacacs:
+      username: admin
+    passwords:
+>>>>>>> cafaa11948cee5469c3e041df6d967d0b605856f
       linux: admin

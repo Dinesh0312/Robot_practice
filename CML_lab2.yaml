@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 testbed:
   name: test_project
 devices:
@@ -128,4 +129,136 @@ devices:
     connections:
       compiled:
         chassis_ip: 10.52.157.150
+=======
+testbed:
+  name: test_project
+devices:
+  PE1:
+    type: router
+    os: iosxr
+    series: asr9k
+    credentials:
+      default:
+        username: cisco
+        password: cisco
+    connections:
+      defaults:
+        via: cli
+        class: unicon.Unicon
+      cli:
+        ip: 10.52.158.211
+        protocol: ssh
+      netconf:
+        class: yang.connector.Netconf
+        ip: 10.52.158.211
+        protocol: netconf
+      gnmi:
+        fqdn: PE1.bt.com
+        port: 57344
+        ca_cert_file: /home/cisco/cxta/CA.cer
+
+  PE2:
+    type: router
+    os: iosxr
+    series: asr9k
+    credentials:
+      default:
+        username: cisco
+        password: cisco
+    connections:
+      defaults:
+        via: cli
+        class: unicon.Unicon
+      cli:
+        ip: 10.52.158.215
+        protocol: ssh
+      netconf:
+        class: yang.connector.Netconf
+        ip: 10.52.158.215
+        protocol: netconf
+      gnmi:
+        fqdn: PE2.bt.com
+        port: 57344
+        ca_cert_file: /home/cisco/cxta/CA.cer
+
+  P1:
+    type: router
+    os: iosxr
+    series: asr9k
+    credentials:
+      default:
+        username: cisco
+        password: cisco
+    connections:
+      defaults:
+        via: cli
+        class: unicon.Unicon
+      cli:
+        ip: 10.52.158.212
+        protocol: ssh
+      netconf:
+        class: yang.connector.Netconf
+        ip: 10.52.158.212
+        protocol: netconf
+      gnmi:
+        fqdn: P1.bt.com
+        port: 57344
+        ca_cert_file: /home/cisco/cxta/CA.cer
+
+  CE3:
+    type: router
+    os: iosxe
+    series: VXE
+    credentials:
+      default:
+        username: cisco
+        password: cisco
+    connections:
+      defaults:
+        via: cli
+        class: unicon.Unicon
+      cli:
+        ip: 10.52.158.216
+        protocol: ssh
+
+  RR1:
+    type: router
+    os: iosxr
+    series: asr9k
+    credentials:
+      default:
+        username: cisco
+        password: cisco
+    connections:
+      defaults:
+        via: cli
+        class: unicon.Unicon
+      cli:
+        ip: 10.52.158.214
+        protocol: ssh
+      netconf:
+        class: yang.connector.Netconf
+        ip: 10.52.158.214
+        protocol: netconf
+      gnmi:
+        fqdn: RR1.bt.com
+        port: 57344
+        ca_cert_file: /home/cisco/cxta/CA.cer
+
+  SpirentRestDevice:
+    os: None
+    type: server
+    connections:
+      rest:
+        chassis_ip: 10.52.157.150
+        server_ip: 10.52.157.160
+        username: xvincent
+        session_name: CML
+  SpirentCompiledDevice:
+    os: None
+    type: server
+    connections:
+      compiled:
+        chassis_ip: 10.52.157.150
+>>>>>>> cafaa11948cee5469c3e041df6d967d0b605856f
         version: 5.36
