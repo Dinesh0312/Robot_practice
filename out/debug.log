@@ -1,0 +1,171 @@
+==============================================================================
+20230119 06:28:32.522 - INFO - + START SUITE: Conditional [ ]
+==============================================================================
+20230119 06:28:32.527 - INFO - +- START TEST: LOAD THE TESTBED [ ]
+------------------------------------------------------------------------------
+20230119 06:28:32.538 - INFO - +-- START KEYWORD: CXTA.robot.Testbed.load testbed "/home/cisco/cxta/CML_lab2.yaml" [ ]
+20230119 06:28:32.542 - INFO - Loading testbed from file /home/cisco/cxta/CML_lab2.yaml
+20230119 06:28:32.661 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.662 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.665 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.666 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.667 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.668 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.670 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.670 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.671 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.672 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.673 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.674 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.675 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.676 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.677 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.678 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.679 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.680 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.682 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.683 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.685 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.686 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.687 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.688 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.689 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.689 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.692 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.694 - DEBUG - Credential credentials not found, trying default ...
+20230119 06:28:32.698 - INFO - +------------------------------------------------------------------------------+
+|                            Genie datafiles used:                             |
++------------------------------------------------------------------------------+
+20230119 06:28:32.699 - INFO - Trigger datafile          |
+20230119 06:28:32.700 - INFO - Verification  datafile    |
+20230119 06:28:32.701 - INFO - Pts datafile              | /venv/lib/python3.9/site-packages/genie/libs/sdk/genie_yamls/pts_datafile.yaml
+20230119 06:28:32.702 - INFO - Subsection datafile       | /venv/lib/python3.9/site-packages/genie/libs/sdk/genie_yamls/subsection_datafile.yaml
+20230119 06:28:32.703 - INFO - Config datafile           | None
+20230119 06:28:32.705 - DEBUG - loading yaml file /venv/lib/python3.9/site-packages/genie/libs/sdk/genie_yamls/pts_datafile.yaml
+20230119 06:28:32.735 - INFO - +-- END KEYWORD: CXTA.robot.Testbed.load testbed "/home/cisco/cxta/CML_lab2.yaml" (192)
+------------------------------------------------------------------------------
+20230119 06:28:32.739 - INFO - +- END TEST: LOAD THE TESTBED (210)
+------------------------------------------------------------------------------
+20230119 06:28:32.741 - INFO - +- START TEST: VERIFY LOOPBACK IP [ ]
+------------------------------------------------------------------------------
+20230119 06:28:32.749 - INFO - +-- START KEYWORD: CXTA.robot.DeviceCli.connect to device "${test_devices[0]}" [ ]
+20230119 06:28:32.762 - INFO - Connecting to PE1
+20230119 06:28:32.763 - INFO - Connecting to device 'Device PE1, type router'
+20230119 06:28:32.764 - INFO - kwargs: {'via': None, 'alias': None, 'init_config_commands': [], 'learn_hostname': False, 'settings': {'POST_DISCONNECT_WAIT_SEC': 0, 'ESCAPE_CHAR_PROMPT_WAIT': 2, 'IGNORE_CHATTY_TERM_OUTPUT': True}, 'logfile': '/home/cisco/cxta/out/device_logs/PE1-20230119T062832754.log'}
+20230119 06:28:32.784 - DEBUG - Connection manager added new connection via cli with alias cli
+20230119 06:28:39.338 - DEBUG - No categories provided, attempting to learn
+20230119 06:28:39.339 - INFO - Categories learned: ['ios', 'xr']
+20230119 06:28:39.341 - INFO - 2023-01-19 06:28:32,775: %UNICON-INFO: +++ PE1 logfile /home/cisco/cxta/out/device_logs/PE1-20230119T062832754.log +++
+
+2023-01-19 06:28:32,776: %UNICON-INFO: +++ Unicon plugin iosxr/asr9k (unicon.plugins.iosxr.asr9k) +++
+Warning: Permanently added '10.52.158.211' (ECDSA) to the list of known hosts.
+
+
+2023-01-19 06:28:34,506: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 10.52.158.211, id: 140186775371008 +++
+
+2023-01-19 06:28:34,509: %UNICON-INFO: connection to PE1
+(cisco@10.52.158.211) Password: 
+
+
+RP/0/RP0/CPU0:PE1#
+
+2023-01-19 06:28:37,073: %UNICON-INFO: +++ initializing handle +++
+
+2023-01-19 06:28:37,394: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Jan 19 06:27:56.587 UTC
+RP/0/RP0/CPU0:PE1#
+
+2023-01-19 06:28:38,474: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Jan 19 06:27:57.666 UTC
+RP/0/RP0/CPU0:PE1#
+20230119 06:28:39.345 - INFO - +-- END KEYWORD: CXTA.robot.DeviceCli.connect to device "${test_devices[0]}" (6593)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:39.352 - INFO - +-- START KEYWORD: CXTA.robot.DeviceCli.use device "${test_devices[0]}" [ ]
+20230119 06:28:39.358 - WARN - "CXTA.robot.DeviceCli.use device "${device:[^"]+}"" has been deprecated. Please use the keyword: select device "${device:[^"]+}"
+20230119 06:28:39.365 - INFO - +-- END KEYWORD: CXTA.robot.DeviceCli.use device "${test_devices[0]}" (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:39.371 - INFO - +-- START KEYWORD: CXTA.robot.DeviceCli.run "show run int Loopback11" [ ]
+20230119 06:28:39.687 - INFO - Executing "show run int Loopback11" on device "PE1" with connection "cli"...
+20230119 06:28:39.689 - DEBUG - Using default unicon error checking
+20230119 06:28:40.761 - INFO - 2023-01-19 06:28:40,064: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'show run int Loopback11' +++
+show run int Loopback11
+Thu Jan 19 06:27:59.257 UTC
+interface Loopback11
+ description For_testing
+ ipv4 address 11.11.11.11 255.255.255.255
+!
+
+RP/0/RP0/CPU0:PE1#
+20230119 06:28:40.765 - INFO - +-- END KEYWORD: CXTA.robot.DeviceCli.run "show run int Loopback11" (1394)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:40.769 - INFO - +-- START KEYWORD: CXTA.robot.Parsing.output contains "11.11.11.11" [ ]
+20230119 06:28:40.771 - INFO - Checking to see if output contains "11.11.11.11"...
+20230119 06:28:40.772 - INFO - Output contains 11.11.11.11!
+20230119 06:28:40.774 - INFO - +-- END KEYWORD: CXTA.robot.Parsing.output contains "11.11.11.11" (3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:40.780 - INFO - +-- START KEYWORD: CXTA.robot.Parsing.output matches pattern "ipv4\\s+address\\s+11.11.11.11\\s+[\\s\\d\\.]+" [ ]
+20230119 06:28:40.788 - INFO - +-- END KEYWORD: CXTA.robot.Parsing.output matches pattern "ipv4\\s+address\\s+11.11.11.11\\s+[\\s\\d\\.]+" (7)
+------------------------------------------------------------------------------
+20230119 06:28:40.792 - INFO - +- END TEST: VERIFY LOOPBACK IP (8049)
+------------------------------------------------------------------------------
+20230119 06:28:40.795 - INFO - +- START TEST: VERIFY LOOPBACK IP ENHANCED LOGGING [ ]
+------------------------------------------------------------------------------
+20230119 06:28:40.812 - INFO - +-- START KEYWORD: CXTA.robot.DeviceCli.connect to device "${test_devices[0]}" [ ]
+20230119 06:28:40.820 - INFO - Connecting to PE1
+20230119 06:28:40.822 - INFO - Connecting to device 'Device PE1, type router'
+20230119 06:28:40.823 - INFO - kwargs: {'via': None, 'alias': None, 'init_config_commands': [], 'learn_hostname': False, 'settings': {'POST_DISCONNECT_WAIT_SEC': 0, 'ESCAPE_CHAR_PROMPT_WAIT': 2, 'IGNORE_CHATTY_TERM_OUTPUT': True}, 'logfile': '/home/cisco/cxta/out/device_logs/PE1-20230119T062840817.log'}
+20230119 06:28:40.957 - INFO - 2023-01-19 06:28:40,890: %UNICON-INFO: PE1 is already connected
+20230119 06:28:40.961 - INFO - +-- END KEYWORD: CXTA.robot.DeviceCli.connect to device "${test_devices[0]}" (147)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:40.966 - INFO - +-- START KEYWORD: CXTA.robot.DeviceCli.use device "${test_devices[0]}" [ ]
+20230119 06:28:40.971 - WARN - "CXTA.robot.DeviceCli.use device "${device:[^"]+}"" has been deprecated. Please use the keyword: select device "${device:[^"]+}"
+20230119 06:28:40.977 - INFO - +-- END KEYWORD: CXTA.robot.DeviceCli.use device "${test_devices[0]}" (11)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:40.981 - INFO - +-- START KEYWORD: CXTA.robot.DeviceCli.run "show run int Loopback11" [ ]
+20230119 06:28:40.988 - INFO - Executing "show run int Loopback11" on device "PE1" with connection "cli"...
+20230119 06:28:40.991 - DEBUG - Using default unicon error checking
+20230119 06:28:42.081 - INFO - 2023-01-19 06:28:41,331: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'show run int Loopback11' +++
+show run int Loopback11
+Thu Jan 19 06:28:00.522 UTC
+interface Loopback11
+ description For_testing
+ ipv4 address 11.11.11.11 255.255.255.255
+!
+
+RP/0/RP0/CPU0:PE1#
+20230119 06:28:42.085 - INFO - +-- END KEYWORD: CXTA.robot.DeviceCli.run "show run int Loopback11" (1102)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:42.089 - INFO - +-- START KEYWORD: BuiltIn.Run Keyword And Return Status [ output contains "11.11.11.11" ]
+20230119 06:28:42.096 - INFO - +--- START KEYWORD: CXTA.robot.Parsing.output contains "11.11.11.11" [ ]
+20230119 06:28:42.099 - INFO - Checking to see if output contains "11.11.11.11"...
+20230119 06:28:42.100 - INFO - Output contains 11.11.11.11!
+20230119 06:28:42.104 - INFO - +--- END KEYWORD: CXTA.robot.Parsing.output contains "11.11.11.11" (6)
+20230119 06:28:42.105 - INFO - ${status} = True
+20230119 06:28:42.108 - INFO - +-- END KEYWORD: BuiltIn.Run Keyword And Return Status (17)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:42.113 - INFO - +-- START KEYWORD: BuiltIn.Run Keyword If [ '${status}' == 'True' | Set Test Message | The Loopback has IP configured. | append=True | ELSE | FAIL | The Loopback doesn't have an IP configured. ]
+20230119 06:28:42.120 - INFO - +--- START KEYWORD: BuiltIn.Set Test Message [ The Loopback has IP configured. | append=True ]
+20230119 06:28:42.126 - INFO - Set test message to:
+The Loopback has IP configured.
+20230119 06:28:42.129 - INFO - +--- END KEYWORD: BuiltIn.Set Test Message (7)
+20230119 06:28:42.131 - INFO - +-- END KEYWORD: BuiltIn.Run Keyword If (18)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:42.137 - INFO - +-- START KEYWORD: BuiltIn.Run Keyword And Return Status [ output matches pattern "ipv4\\\\s+address\\\\s+11.11.11.11\\\\s+[\\\\s\\\\d\\\\.]+" ]
+20230119 06:28:42.143 - INFO - +--- START KEYWORD: CXTA.robot.Parsing.output matches pattern "ipv4\\s+address\\s+11.11.11.11\\s+[\\s\\d\\.]+" [ ]
+20230119 06:28:42.147 - INFO - +--- END KEYWORD: CXTA.robot.Parsing.output matches pattern "ipv4\\s+address\\s+11.11.11.11\\s+[\\s\\d\\.]+" (3)
+20230119 06:28:42.148 - INFO - ${status} = True
+20230119 06:28:42.151 - INFO - +-- END KEYWORD: BuiltIn.Run Keyword And Return Status (14)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230119 06:28:42.155 - INFO - +-- START KEYWORD: BuiltIn.Run Keyword If [ '${status}' == 'True' | Set Test Message | The Loopback has IP configured. | append=True | ELSE | FAIL | The Loopback doesn't have an IP configured. ]
+20230119 06:28:42.159 - INFO - +--- START KEYWORD: BuiltIn.Set Test Message [ The Loopback has IP configured. | append=True ]
+20230119 06:28:42.161 - INFO - Set test message to:
+The Loopback has IP configured. The Loopback has IP configured.
+20230119 06:28:42.163 - INFO - +--- END KEYWORD: BuiltIn.Set Test Message (3)
+20230119 06:28:42.164 - INFO - +-- END KEYWORD: BuiltIn.Run Keyword If (10)
+------------------------------------------------------------------------------
+20230119 06:28:42.168 - INFO - +- END TEST: VERIFY LOOPBACK IP ENHANCED LOGGING (1372)
+------------------------------------------------------------------------------
+20230119 06:28:42.176 - INFO - + END SUITE: Conditional (14020)
+==============================================================================

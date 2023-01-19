@@ -1,0 +1,48 @@
+
+2023-01-19 06:28:32,775: %UNICON-INFO: +++ PE1 logfile /home/cisco/cxta/out/device_logs/PE1-20230119T062832754.log +++
+
+2023-01-19 06:28:32,776: %UNICON-INFO: +++ Unicon plugin iosxr/asr9k (unicon.plugins.iosxr.asr9k) +++
+Warning: Permanently added '10.52.158.211' (ECDSA) to the list of known hosts.
+
+
+2023-01-19 06:28:34,506: %UNICON-INFO: +++ connection to spawn: ssh -l cisco 10.52.158.211, id: 140186775371008 +++
+
+2023-01-19 06:28:34,509: %UNICON-INFO: connection to PE1
+(cisco@10.52.158.211) Password: 
+
+
+RP/0/RP0/CPU0:PE1#
+
+2023-01-19 06:28:37,073: %UNICON-INFO: +++ initializing handle +++
+
+2023-01-19 06:28:37,394: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Jan 19 06:27:56.587 UTC
+RP/0/RP0/CPU0:PE1#
+
+2023-01-19 06:28:38,474: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Jan 19 06:27:57.666 UTC
+RP/0/RP0/CPU0:PE1#
+
+2023-01-19 06:28:40,064: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'show run int Loopback11' +++
+show run int Loopback11
+Thu Jan 19 06:27:59.257 UTC
+interface Loopback11
+ description For_testing
+ ipv4 address 11.11.11.11 255.255.255.255
+!
+
+RP/0/RP0/CPU0:PE1#
+
+2023-01-19 06:28:40,890: %UNICON-INFO: PE1 is already connected
+
+2023-01-19 06:28:41,331: %UNICON-INFO: +++ PE1 with via 'cli': executing command 'show run int Loopback11' +++
+show run int Loopback11
+Thu Jan 19 06:28:00.522 UTC
+interface Loopback11
+ description For_testing
+ ipv4 address 11.11.11.11 255.255.255.255
+!
+
+RP/0/RP0/CPU0:PE1#

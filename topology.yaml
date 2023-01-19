@@ -1,0 +1,47 @@
+testbed:
+  name: test_project
+devices:
+  R1:
+    type: router
+    connections:
+      console:
+        protocol: telnet
+        ip: 10.225.240.141
+        port: '17071'
+        username: admin
+        password: admin
+        class: unicon.Unicon
+      defaults:
+        via: console
+    os: iosxr
+    custom:
+      categories:
+      - ios
+      - xr
+      - xr-v
+    tacacs:
+      username: admin
+    passwords:
+      linux: admin
+  R2:
+    type: router
+    connections:
+      console:
+        protocol: telnet
+        ip: 10.225.240.141
+        port: '17074'
+        username: admin
+        password: admin
+        class: unicon.Unicon
+      defaults:
+        via: console
+    os: iosxr
+    custom:
+      categories:
+      - ios
+      - xr
+      - xr-v
+    tacacs:
+      username: admin
+    passwords:
+      linux: admin
